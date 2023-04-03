@@ -1,0 +1,15 @@
+G:\GeekBrains\HomeWork\Seminar3\19\obj\Debug\net6.0\19.csproj.AssemblyReference.cache
+G:\GeekBrains\HomeWork\Seminar3\19\obj\Debug\net6.0\19.GeneratedMSBuildEditorConfig.editorconfig
+G:\GeekBrains\HomeWork\Seminar3\19\obj\Debug\net6.0\19.AssemblyInfoInputs.cache
+G:\GeekBrains\HomeWork\Seminar3\19\obj\Debug\net6.0\19.AssemblyInfo.cs
+G:\GeekBrains\HomeWork\Seminar3\19\obj\Debug\net6.0\19.csproj.CoreCompileInputs.cache
+G:\GeekBrains\HomeWork\Seminar3\19\bin\Debug\net6.0\19.exe
+G:\GeekBrains\HomeWork\Seminar3\19\bin\Debug\net6.0\19.deps.json
+G:\GeekBrains\HomeWork\Seminar3\19\bin\Debug\net6.0\19.runtimeconfig.json
+G:\GeekBrains\HomeWork\Seminar3\19\bin\Debug\net6.0\19.dll
+G:\GeekBrains\HomeWork\Seminar3\19\bin\Debug\net6.0\19.pdb
+G:\GeekBrains\HomeWork\Seminar3\19\obj\Debug\net6.0\19.dll
+G:\GeekBrains\HomeWork\Seminar3\19\obj\Debug\net6.0\refint\19.dll
+G:\GeekBrains\HomeWork\Seminar3\19\obj\Debug\net6.0\19.pdb
+G:\GeekBrains\HomeWork\Seminar3\19\obj\Debug\net6.0\19.genruntimeconfig.cache
+G:\GeekBrains\HomeWork\Seminar3\19\obj\Debug\net6.0\ref\19.dll
