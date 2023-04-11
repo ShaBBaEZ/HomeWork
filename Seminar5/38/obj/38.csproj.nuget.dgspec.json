@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GB\\HomeWork\\Seminar5\\38\\38.csproj": {}
+    "G:\\GeekBrains\\HomeWork\\Seminar5\\38\\38.csproj": {}
   },
   "projects": {
-    "D:\\GB\\HomeWork\\Seminar5\\38\\38.csproj": {
+    "G:\\GeekBrains\\HomeWork\\Seminar5\\38\\38.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GB\\HomeWork\\Seminar5\\38\\38.csproj",
+        "projectUniqueName": "G:\\GeekBrains\\HomeWork\\Seminar5\\38\\38.csproj",
         "projectName": "38",
-        "projectPath": "D:\\GB\\HomeWork\\Seminar5\\38\\38.csproj",
-        "packagesPath": "C:\\Users\\ANTON SHABALOV\\.nuget\\packages\\",
-        "outputPath": "D:\\GB\\HomeWork\\Seminar5\\38\\obj\\",
+        "projectPath": "G:\\GeekBrains\\HomeWork\\Seminar5\\38\\38.csproj",
+        "packagesPath": "C:\\Users\\Антон\\.nuget\\packages\\",
+        "outputPath": "G:\\GeekBrains\\HomeWork\\Seminar5\\38\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ANTON SHABALOV\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Антон\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

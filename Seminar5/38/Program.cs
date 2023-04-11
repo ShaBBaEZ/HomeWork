@@ -4,7 +4,38 @@
 Console.WriteLine("Введите кол-во элементов массива:");
 int x = int.Parse(Console.ReadLine()!);
 int[] array = GetBinaryArray(x);
+Console.WriteLine(String.Join(" ", array));
+Console.WriteLine($"Максимальное число {Max(array)}");
+Console.WriteLine($"Минимальное число число {Min(array)}");
+Console.WriteLine($"Разница {Max(array) - Min(array)}");
 
+int Min(int[] array)
+{
+    int max = array[0];
+    for(int i = 0; i < array.Length; i++)
+    {
+        if(array[i] < max)
+        {
+            max = array[i];
+        }
+    }
+    return max;
+
+}
+
+int Max(int[] array)
+{
+    int max = array[0];
+    for(int i = 0; i < array.Length; i++)
+    {
+        if(array[i] > max)
+        {
+            max = array[i];
+        }
+    }
+    return max;
+
+}
 
 int[] GetBinaryArray(int size){
     int[] result = new int[size];
