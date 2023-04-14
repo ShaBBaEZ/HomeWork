@@ -4,13 +4,37 @@
 
 Console.Clear();
 Console.WriteLine("Введите b1 координату: ");
-int b1 = int.Parse(Console.ReadLine()!);
+double b1 = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите k1 координату: ");
-int k1 = int.Parse(Console.ReadLine()!);
+double k1 = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите b2 координату: ");
-int b2 = int.Parse(Console.ReadLine()!);
+double b2 = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите k2 координату: ");
-int k2 = int.Parse(Console.ReadLine()!);
+double k2 = int.Parse(Console.ReadLine()!);
+Console.WriteLine($"{Intersection(k1,k2,b1,b2)}");
 
-x = (b2 - b1) / (k1 - k2)
-y = k1 * x + b1
+
+string Intersection(double b1, double k1, double b2, double k2)
+{
+    if(k1==k2)
+    {
+        if(b1==b2)
+        {
+            string message = "Прямые лежат друг на друге";
+            return message;
+        }
+        else
+        {
+            string message = "Прямые параллельны";
+            return message;
+        }
+    }
+    else
+    {
+       double x = (b2 - b1)/(k1 - k2);
+       double y = k1 * x + b1;
+       string message =($"Координаты пересечения по оси X {x:f1} по оси Y {y:f1}");
+       return  message;
+    }
+   
+}
