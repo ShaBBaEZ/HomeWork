@@ -53,7 +53,7 @@ void average(int [,] inarray)
         double sum = 0;
         double aver = 0;
         for(int i = 0; i < inarray.GetLength(0);i++)
-        {   double average = 0;
+        {   
             sum += inarray[i,j];
             aver++;
         }
