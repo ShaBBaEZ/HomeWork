@@ -14,6 +14,7 @@ double k2 = int.Parse(Console.ReadLine()!);
 Console.WriteLine($"{Intersection(k1,k2,b1,b2)}");
 
 
+
 string Intersection(double b1, double k1, double b2, double k2)
 {
     if(k1==k2)
