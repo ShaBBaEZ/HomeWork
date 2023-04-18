@@ -11,17 +11,23 @@
 // 17 -> такого числа в массиве нет
 
 
-using System;// позволяет использовать команды Clear Write Read без Console
+using System;
 using static System.Console;
 
 Clear();
 WriteLine("Введите позицию элемента: ");
 int x = int.Parse(ReadLine()!);
-int rows = new Random().Next(5,10);
-int columns = new Random().Next(5,10);
+Console.Write("Введите количество строк массива: ");
+int rows = int.Parse(Console.ReadLine()!);
+
+Console.Write("Введите количество столбцов массива: ");
+int columns = int.Parse(Console.ReadLine()!);
 
 int[,] array = GetArray(rows,columns, 0 , 100);
 PrintArray(array);
+number(array);
+
+
 
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
@@ -38,7 +44,7 @@ int[,] GetArray(int m, int n, int minValue, int maxValue)
 
 
 void PrintArray(int[,] inArray)
-{
+{   
     for (int i = 0; i < inArray.GetLength(0); i++)
     {
         for(int j = 0; j < inArray.GetLength(1); j++)
@@ -48,4 +54,28 @@ void PrintArray(int[,] inArray)
         WriteLine();
     }
 }
+
+void number(int[,] array)
+{   
+    if(x < 1 || x > rows * columns)
+    {
+        WriteLine("Такого элемента нет");
+    }
+    else
+    {
+        if( x % columns == 0)
+        {
+            int i = x / columns - 1;
+            int j = columns - 1;
+            WriteLine($"{x} - > {array[i,j]}");
+        }
+        else
+        {
+            int i = x / columns;
+            int j = (x % columns) - 1;
+            WriteLine($"{x} - > {array[i,j]}");
+        }
+    }
+}
+
 
