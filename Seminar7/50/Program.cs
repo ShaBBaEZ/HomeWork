@@ -11,6 +11,8 @@
 // 17 -> такого числа в массиве нет
 
 
+
+
 using System;
 using static System.Console;
 
@@ -73,7 +75,7 @@ void number(int[,] array)
         {
             int i = x / columns;
             int j = (x % columns) - 1;
-            WriteLine($"{x} - > {array[i,j]}");
+            WriteLine($"Элемент под номером {x} - > {array[i,j]}");
         }
     }
 }
