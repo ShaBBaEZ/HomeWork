@@ -62,8 +62,8 @@ void number(int [,] array)
     else
     {
         int i = x / (array.GetLength(0) - 1);
-        int j = x % array.GetLength(0) - 1;
+        int j = x - i;
         WriteLine($"{i} {j}");
-        WriteLine($"Под номером {x} - > {array[i,j]}"); 
+        WriteLine($"Под номером {x} - > {array[i,j]}");
     }
 }
