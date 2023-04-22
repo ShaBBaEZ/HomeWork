@@ -11,15 +11,19 @@
 // 17 -> такого числа в массиве нет
 
 
+
+
 using System;
 using static System.Console;
 
 Clear();
 WriteLine("Введите позицию элемента: ");
 int x = int.Parse(ReadLine()!);
-int rows = new Random().Next(5,10);
-int columns = new Random().Next(5,10);
-WriteLine($"Строк {rows - 1} столбцов {columns - 1}");
+Console.Write("Введите количество строк массива: ");
+int rows = int.Parse(Console.ReadLine()!);
+
+Console.Write("Введите количество столбцов массива: ");
+int columns = int.Parse(Console.ReadLine()!);
 
 int[,] array = GetArray(rows,columns, 0 , 100);
 PrintArray(array);
@@ -42,10 +46,10 @@ int[,] GetArray(int m, int n, int minValue, int maxValue)
 
 
 void PrintArray(int[,] inArray)
-{
-    for (int i = 0; i < inArray.GetLength(0) - 1; i++)
+{   
+    for (int i = 0; i < inArray.GetLength(0); i++)
     {
-        for(int j = 0; j < inArray.GetLength(1) - 1; j++)
+        for(int j = 0; j < inArray.GetLength(1); j++)
         {
             Write($"{inArray[i,j]} ");
         }
@@ -53,17 +57,34 @@ void PrintArray(int[,] inArray)
     }
 }
 
-void number(int [,] array)
+void number(int[,] array)
 {   
-    if(x < 1 || x > (array.GetLength(1) - 1) * (array.GetLength(0) - 1))
+    if(x < 1 || x > rows * columns)
     {
-        WriteLine($"Число выходит за пределы массива и его нет");
+        WriteLine("Такого элемента нет");
     }
     else
     {
+<<<<<<< HEAD
         int i = x / (array.GetLength(0) - 1);
         int j = x - i;
         WriteLine($"{i} {j}");
         WriteLine($"Под номером {x} - > {array[i,j]}");
+=======
+        if( x % columns == 0)
+        {
+            int i = x / columns - 1;
+            int j = columns - 1;
+            WriteLine($"{x} - > {array[i,j]}");
+        }
+        else
+        {
+            int i = x / columns;
+            int j = (x % columns) - 1;
+            WriteLine($"Элемент под номером {x} - > {array[i,j]}");
+        }
+>>>>>>> e24b96b11a8cf383ab8a9173b850490bf4778651
     }
 }
+
+
