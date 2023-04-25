@@ -65,6 +65,12 @@ void number(int[,] array)
     }
     else
     {
+<<<<<<< HEAD
+        int i = x / (array.GetLength(0) - 1);
+        int j = x - i;
+        WriteLine($"{i} {j}");
+        WriteLine($"Под номером {x} - > {array[i,j]}");
+=======
         if( x % columns == 0)
         {
             int i = x / columns - 1;
@@ -77,6 +83,7 @@ void number(int[,] array)
             int j = (x % columns) - 1;
             WriteLine($"Элемент под номером {x} - > {array[i,j]}");
         }
+>>>>>>> e24b96b11a8cf383ab8a9173b850490bf4778651
     }
 }
 

@@ -27,7 +27,7 @@ int [] masSum = GetRowArray(array, rows);
 WriteLine();
 int sum = SumMin(masSum);
 int x = MinRows(masSum,sum);
-WriteLine($"Минимальная сумма {sum} находится в строке - > {x}");
+WriteLine($"Минимальная сумма {sum} находится в строке - > {x + 1}");
 PA(GetRowArray(array, rows));
 
 
@@ -59,29 +59,27 @@ void PrintArray(int[,] inArray)
 }
 
 int[] GetRowArray(int[,] inArray, int x)
-{
+{   
     int[] result = new int[x];
-    for(int o = 0; o < x; o++)
+    for(int i = 0; i < inArray.GetLength(0);i++)
     {
-        for(int i = 0; i < inArray.GetLength(0);i++)
+        int sum = 0;
+        for(int j = 0; j < inArray.GetLength(1);j++)
         {
-            int sum = 0;
-            for(int j = 0; j < inArray.GetLength(1);j++)
-            {
-               sum+= array[i,j]; 
-            }
-            result[o] = sum;
+            sum+= array[i,j]; 
         }
+        result[i] = sum;
     }
     return result;
 }
+
 
 int SumMin (int [] array)
 {
     int min = array[0];
     for (int i = 1; i < array.Length; i++)
     {
-        if(min < array[i])
+        if(min > array[i])
         {
             min = array[i];
         }
@@ -100,7 +98,7 @@ int MinRows(int[] array, int x)
     return i;
 }
 
-void PA(int[] inArray)
+void PA(int[] inArray)// вывод суммы каждой строки для удобства
 {
     for (int i = 0; i < inArray.Length; i++)
     {
